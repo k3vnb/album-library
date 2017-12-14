@@ -1,0 +1,73 @@
+ul {
+  list-style: none;
+}
+.header {
+  color: white;
+  background-color: lightblue;
+  background-image: url(../img/vinyl.png);
+  background-size: 50px;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+  font-size: 100px;
+}
+#add-album {
+  background-color: darkred;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  width: 50%;
+  height: 30px;
+  margin: 5px;
+}
+#band-name {
+  margin-top: 20px;
+}
+#art {
+  margin-bottom: 20px;
+}
+#submit {
+  margin-bottom: 20px;
+}
+.card {
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  height: 400px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+.card:hover img{
+  visibility: hidden;
+}
+.card ul {
+  margin-bottom: 50%;
+}
+/*.card li {
+  visibility: hidden;
+}
+.card li:last-child {
+  visibility: visible;
+}
+.card li:last-child:hover ~ li {
+  visibility: visible;
+  background-color: blue;
+}*/
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+#gallery div {
+  width: 500px;
+  flex-grow: 1;
+}

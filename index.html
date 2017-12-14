@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
@@ -9,27 +10,18 @@
   </head>
   <body>
     <div class="container">
+      <div class="header">
+        <h1>MY ALBUMS</h1>
+      </div>
       <div class="form-area">
-        <form id="add-album" action="index.html" method="post">
-          <input id="band-name" type="text" name="Band Name" value="band-name" placeholder="Band Name">
-          <input id="title" type="text" name="Album Title" value="album-title" placeholder="Album Title">
-          <input id="year" type="text" name="Release Year" value="release-year" placeholder="Release Year">
-          <input id="art" type="text" name="Artwork" value="artwork" placeholder="Artwork URL">
-          <button id="submit" type="submit" name="button">Submit</button>
-        </form>
-        <div id="album-info">
-          <div class="band-name">
-
-          </div>
-          <div class="album-title">
-
-          </div>
-          <div class="year">
-
-          </div>
-          <div class="art">
-            <img src="" alt="">
-          </div>
+        <div id="add-album">
+          <input id="band-name" type="text" name="Band Name"  placeholder="Band Name">
+          <input id="title" type="text" name="Album Title" placeholder="Album Title">
+          <input id="year" type="text" name="Release Year" placeholder="Release Year">
+          <input id="art" type="text" name="Artwork" placeholder="Artwork URL">
+          <button id="submit" type="button" name="button">Submit</button>
+        </div>
+        <div id="gallery">
 
         </div>
       </div>
