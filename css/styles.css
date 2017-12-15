@@ -1,3 +1,10 @@
+.gallery-container {
+  background-image: url(../img/wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+}
+
 ul {
   list-style: none;
 }
@@ -7,67 +14,156 @@ ul {
   background-image: url(../img/vinyl.png);
   background-size: 50px;
   text-align: center;
+  text-shadow: 1px 1px 3px black;
 }
 h1 {
   margin: 0;
   font-size: 100px;
 }
 #add-album {
-  background-color: darkred;
+  background-color: lightblue;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+button:hover {
+  font-size: 125%;
+  box-shadow: 1px 1px 1px white;
+}
 input {
   width: 50%;
   height: 30px;
   margin: 5px;
+  border: none;
+  border-bottom: .5px solid grey;
+  background-color: lightblue;
 }
+#add-album button {
+  width: 100%;
+  height: 50px;
+  background-color: #58a1b9;
+  color: white;
+}
+
 #band-name {
   margin-top: 20px;
 }
 #art {
   margin-bottom: 20px;
 }
-#submit {
-  margin-bottom: 20px;
-}
+
 .card {
-  background-color: orange;
   display: flex;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
   position: relative;
-  height: 400px;
+  overflow: hidden;
+  object-fit: cover;
 }
 .card img {
   width: 100%;
-  height: auto;
+  height: 100%;
   position: absolute;
 }
 .card:hover img{
-  visibility: hidden;
+  z-index: 0;
+  opacity: .3;
 }
+/*.card img:active {
+  height: 100vh;
+}*/
 .card ul {
   margin-bottom: 50%;
 }
-/*.card li {
-  visibility: hidden;
+.card li {
+  margin-bottom: 10px;
 }
-.card li:last-child {
-  visibility: visible;
+.card li:first-child {
+  font-size: 200%;
+  font-weight: bold;
 }
-.card li:last-child:hover ~ li {
-  visibility: visible;
-  background-color: blue;
-}*/
+.card li:nth-child(2) {
+  font-size: 150%;
+}
+.card i {
+  align-self: flex-end;
+}
+.gold {
+  color: gold;
+}
+
+
 #gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: white;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 0 auto;
   }
 #gallery div {
   width: 500px;
   flex-grow: 1;
+  height: auto;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform .2s ease-in-out;
+}
+#gallery div:active {
+  transform: scale(2.3);
+  opacity: 1;
+  overflow: auto;
+  z-index: 99;
+}
+#gallery div img:active {
+  transform: scale(1);
+  opacity: 1;
+  overflow: auto;
+  z-index: 100;
+}
+
+/*#gallery div:active {
+  height: 99vh;
+  width: 99vw;
+}*/
+
+
+
+.footer {
+  background-color: lightblue;
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0%;
+}
+.footer ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+span.m:hover{
+  color: red;
+}
+span.y:hover{
+  color: orange;
+}
+span.a:hover{
+  color: yellow;
+}
+span.l:hover{
+  color: green;
+}
+span.b:hover{
+  color: indigo;
+}
+span.u:hover{
+  color: violet;
+}
+span.m:hover{
+  color: red;
+}
+span.s:hover{
+  color: orange;
 }

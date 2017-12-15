@@ -27,9 +27,12 @@ $(document).ready(function() {
     var inputtedURL = $("input#art").val();
     // $("#album-info").append(
     //   "<div>" + inputtedName + inputtedTitle + inputtedYear + "<img src=" + inputtedURL + ">" + "</div>" + coloringBook);
-    var yourAlbum = new Album("<div class='card'>"  + "<img class='show' src=" + inputtedURL + "/>  <ul> <li>" + inputtedName  + "</li> <li>" + inputtedTitle  + "</li> <li>" + inputtedYear  + "</li> </ul> </div>");
+    var yourAlbum = new Album("<div class='card'>"  + "<img class='show' src=" + inputtedURL + ">  <ul> <li>" + inputtedName  + "</li> <li>" + inputtedTitle  + "</li> <li>" + inputtedYear  + " </li> <li> <i class='fa fa-star 1-star' aria-hidden='true'></i>  <i class='fa fa-star 1-star 2-star' aria-hidden='true'></i>  <i class='fa fa-star 1-star 2-star 3-star' aria-hidden='true'></i>  <i class='fa fa-star 1-star 2-star 3-star 4-star' aria-hidden='true'></i>  <i class='fa fa-star 1-star 2-star 3-star 4-star 5-star' aria-hidden='true'></i>  </li> </ul></div>");
     $("#gallery").append(yourAlbum.albumDetails());
       resetFields();
-
   });
+  // $("i").click(function() {
+  //   $("i").addClass(".gold");
+  // });
+
 });
